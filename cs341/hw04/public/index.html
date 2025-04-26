@@ -1,0 +1,97 @@
+<!-- Bryce Kwon -->
+
+<!DOCTYPE html>
+
+<html lang="en-us">
+  <head>
+
+    <title>Cheesecake Order Form</title>
+    <link rel="stylesheet" type="text/css" href="./stylesheets/styles.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+    <script src="./javascripts/form-validation.js"></script>
+    <script src="./javascripts/stats.js"></script>
+
+  </head>
+  <body>
+    
+    <!-- Webpage Title -->
+    <h1 class="cheesecake-title">Cheesecake Order Form</h1>
+    
+    <!-- Cheesecake Image -->
+    <img class="cheesecake-image" src="./images/cheescake.jpg" />
+
+    <!-- Cheesecake Order Form -->
+    <form class="cheesecake-form" method='post'>
+      
+      <!-- Quantity -->
+      <div class="form-option">
+        <p class="main-title">Quantity</p>
+        <select>
+          <option value="1">1</option> 
+          <option value="2">2</option> 
+          <option value="3">3</option> 
+        </select>
+      </div>
+
+      <!-- Topping -->
+      <div class="form-option">
+        <p class="main-title">Topping</p>
+        <input type="radio" name="topping" value="plain">Plain<br />
+        <input type="radio" name="topping" value='cherry'>Cherry<br />
+        <input type="radio" name="topping" value='chocolate'>Chocolate<br />
+      </div>
+
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+
+      <!-- Notes Form -->
+      <div class="form-option">
+        <p class="main-title">Notes:</p>
+        <textarea id="notes" placeholder="Enter any special instructions here." rows="4" cols="50"></textarea>
+      </div>
+
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      
+      <!-- Submit Button -->
+      <button class="order-button" type='submit'>Order</button>
+
+    </form>
+
+    <!-- Statistics of Past Orders -->
+    <h2 class="cheesecake-title">Total Orders <span id='month'>Jan</span>
+        <select id='form1' class='dropdown'>
+            <option value="January">January</option>
+            <option value="February">February</option>
+            <option value="March">March</option>
+            <option value="April">April</option>
+            <option value="May">May</option>
+            <option value="June">June</option>
+            <option value="July">July</option>
+            <option value="August">August</option>
+            <option value="September">September</option>
+            <option value="October">October</option>
+            <option value="November">November</option>
+            <option value="December">December</option>
+        </select>
+    </h2>
+    <ul>
+      <li id='plain_stats'>31 Plain</li>
+      <li id='cherry_stats'>11 Cherry</li>
+      <li id='chocolate_stats'>17 Chocolate</li>
+    </ul>
+
+  </body>
+</html>
+
